@@ -15,13 +15,13 @@ const Wallet = () => {
 
     const fetchSingleuserData = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/userwalletid/${id}`);
+        const res = await axios.get(`https://calsoft.onrender.com/api/userwalletid/${id}`);
         const singleUserWallet = res.data.holdings;
         setTransaction(res.data)
         
 
 
-        const exchangeRates = await axios.get("http://localhost:5000/api/exchangeget");
+        const exchangeRates = await axios.get("https://calsoft.onrender.com/api/exchangeget");
         const exchangeFetchData = exchangeRates.data[0];
 
 
