@@ -10,7 +10,7 @@ const Transaction = () => {
 
         try{
 
-            const res = await axios.get("http://localhost:5000/api/transactionget");
+            const res = await axios.get("https://calsoft.onrender.com/api/transactionget");
             setTransactionData(res.data)
            
         }catch(error){
