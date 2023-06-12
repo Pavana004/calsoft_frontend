@@ -13,7 +13,7 @@ const Admin = () => {
     const fetchPayments = async () => {
       try {
 
-        const res = await axios.get('http://localhost:5000/api/paymentget');
+        const res = await axios.get('https://calsoft.onrender.com/api/paymentget');
         setPayments(res.data);
         setFilterData(res.data);
         setData(res.data);
