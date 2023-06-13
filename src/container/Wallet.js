@@ -108,7 +108,7 @@ const Wallet = () => {
               </table>
             </div>
             <div className='h-64 bg-slate-900 m-2 rounded-xl overflow-auto text-center  ' style={{ width: "90%" }}>
-            <h1 className='mx-auto my-5 text-2xl'>Assets Breakdown</h1>
+            <h1 className='mx-auto my-5 text-2xl'>Transaction</h1>
               <table className='table-auto text-white  mx-auto align-middle text-center justify-between  '>
                 <thead className='border-b-2 border-white text-slate-500'>
                   <tr className="">
