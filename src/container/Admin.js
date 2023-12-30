@@ -13,7 +13,7 @@ const Admin = () => {
     const fetchPayments = async () => {
       try {
 
-        const res = await axios.get('https://calsoft.onrender.com/api/paymentget');
+        const res = await axios.get('https://calsoft-backend.vercel.app/api/paymentget');
         setPayments(res.data);
         setFilterData(res.data);
         setData(res.data);

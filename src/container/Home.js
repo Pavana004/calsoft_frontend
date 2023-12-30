@@ -19,11 +19,11 @@ const Home = () => {
   useEffect(() => {
     const fetchexchangeData = async () => {
       try {
-        const exchangeRates = await axios.get("https://calsoft.onrender.com/api/exchangeget");
+        const exchangeRates = await axios.get("https://calsoft-backend.vercel.app/api/exchangeget");
         const exchangeFetchData = exchangeRates.data[0];
   
 
-        const userWallet = await axios.get("https://calsoft.onrender.com/api/userwalletget");
+        const userWallet = await axios.get("https://calsoft-backend.vercel.app/api/userwalletget");
         const userWalletFetchData = userWallet.data;
         setUserDetailsData(userWalletFetchData);
 
