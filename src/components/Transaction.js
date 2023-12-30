@@ -10,7 +10,7 @@ const Transaction = () => {
 
         try{
 
-            const res = await axios.get("https://calsoft.onrender.com/api/transactionget");
+            const res = await axios.get("https://calsoft-backend.vercel.app/api/transactionget");
             setTransactionData(res.data)
            
         }catch(error){
